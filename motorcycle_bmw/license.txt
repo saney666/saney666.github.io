@@ -1,0 +1,11 @@
+Model Information:
+* title:	Motorcycle BMW FBX 2021
+* source:	https://sketchfab.com/3d-models/motorcycle-bmw-fbx-2021-cf420a60ca794d889b3bab135a218864
+* author:	jan vancik (https://sketchfab.com/janvancik)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Motorcycle BMW FBX 2021" (https://sketchfab.com/3d-models/motorcycle-bmw-fbx-2021-cf420a60ca794d889b3bab135a218864) by jan vancik (https://sketchfab.com/janvancik) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
