@@ -11,8 +11,8 @@
           // changing your 3D model source, size, position and so on
           // or you can just open links, trigger actions...
           var timeString = moment().format('MMMM Do YYYY, h:mm:ss a');
-          document.querySelector("#helltext").setAttribute('text',"width: 10px;color: green; value:Hello,Time is "  + timeString);
-          alert("Hi there!");
+          document.querySelector("#helltext").setAttribute('text',"width: 10px;color: green; value:Hello,Time is ");
+          alert("Hi there!" + timeString);
         });
         updateTextTime();
     };
