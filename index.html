@@ -10,7 +10,7 @@
           // here you can change also a-scene or a-entity properties, like
           // changing your 3D model source, size, position and so on
           // or you can just open links, trigger actions...
-          var timeString = moment().format('YYYY-MM-DD, h:mm:ss a');
+          var timeString = moment().format('hh:mm:ss a');
           var aaa="width: 5px;color: green; value:Hello,Time is " + timeString;
           document.querySelector("#helltext").setAttribute('text',aaa);
           alert("Hi there!");
@@ -18,7 +18,7 @@
         updateTextTime();
     };
     function updateTextTime(){
-        var timeString = moment().format('YYYY-MM-DD, h:mm:ss a');
+        var timeString = moment().format('hh:mm:ss a');
         var aaa="width: 5px;color: green; value:Hello,Time is " + timeString;
         document.querySelector("#helltext").setAttribute('text',aaa);
         setTimeout(updateTextTime,1000);
