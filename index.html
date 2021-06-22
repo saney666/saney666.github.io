@@ -8,16 +8,22 @@
     //var helltext=sceneEl.querySelector('#helltext');
     //document.write('Hello world!');
     //helltext.setAttribute('text',"width: 10px;color: green; value:Hello123");
-    var entityEl = document.createElement('a-entity');
-    // Do `.setAttribute()`s to initialize the entity.
-    entityEl.setAttribute('geometry', {
-        primitive: 'box',
-        height: 3,
-        width: 1
-    });
-    entityEl.setAttribute('position', {x: 1, y: 2, z: -3});
-    sceneEl.appendChild(entityEl);
 
+    AFRAME.registerComponent('log', {
+        schema: {
+            message: {type: 'string', default: 'Hello, World!'}
+        },
+
+        init: function () {
+            console.log(this.data.message);
+        }
+    });
+    AFRAME.registerComponent('hello-world', {
+        init: function () {
+            console.log('Hello, World!');
+        }
+    });
+    document.querySelector('a-scene').setAttribute('hello-world', '');
 
 </script>
 
@@ -27,7 +33,9 @@
         <a-marker type='pattern' url='patts/pattern-qr-code.patt' >
             <a-entity id='helltext' position='3 -2 0' rotation="270 0 0" text="width: 10px;color: green; value:Hello" ></a-entity>
             <a-entity position='0 -2 0' rotation="270 0 0" gltf-model="url(shiba/scene.gltf)"></a-entity>
-        
+            <a-entity log="message: Hello, Metaverse!"></a-entity>
+            
         </a-marker>
+        <a-entity hello-world></a-entity>
     </a-scene>
 </body>
