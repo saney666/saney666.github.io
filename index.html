@@ -23,14 +23,19 @@
             console.log('Hello, World!');
         }
     });
-    //document.querySelector('a-scene').setAttribute('hello-world', '');
+
+
 
 </script>
 
 <body style='margin : 0px; overflow: hidden;'>
     
-    <a-scene >
-        
-        <a-entity hello-world></a-entity>
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+        <a-marker type='pattern' url='patts/pattern-qr-code.patt' >
+            <a-entity id='helltext' position='3 -2 0' rotation="270 0 0" text="width: 10px;color: green; value:Hello" ></a-entity>
+            <a-entity position='0 -2 0' rotation="270 0 0" gltf-model="url(shiba/scene.gltf)"></a-entity>
+            <a-entity log="message: Hello, Metaverse!"></a-entity>
+            <a-entity hello-world></a-entity>
+        </a-marker>
     </a-scene>
 </body>
