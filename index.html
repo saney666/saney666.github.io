@@ -15,12 +15,13 @@
           document.querySelector("#helltext").setAttribute('text',aaa);
           alert(timeString);
         });
-        //updateTextTime();
+        updateTextTime();
     };
     function updateTextTime(){
-        //var timeString = moment().format('MMMM Do YYYY, h:mm:ss a');
-        //document.querySelector("#helltext").setAttribute('text',"width: 10px;color: green; value:Hello,Time is " + timeString);
-        //setTimeout(updateTextTime,1000);
+        var timeString = moment().format('YYYY-MM-DD, h:mm:ss a');
+        var aaa="width: 5px;color: green; value:Hello,Time is " + timeString;
+        document.querySelector("#helltext").setAttribute('text',aaa);
+        setTimeout(updateTextTime,1000);
     };
     var sceneEl = document.querySelector('a-scene');
     //console.log(sceneEl.querySelector('#helltext'));
