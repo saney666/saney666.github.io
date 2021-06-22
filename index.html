@@ -2,7 +2,7 @@
 <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
 <script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
 <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
-<script src="script/moment.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script >
 
     window.onload = function () {
@@ -17,9 +17,9 @@
         //updateTextTime();
     };
     function updateTextTime(){
-        var timeString = moment().format('MMMM Do YYYY, h:mm:ss a');
-        document.querySelector("#helltext").setAttribute('text',"width: 10px;color: green; value:Hello,Time is " + timeString);
-        setTimeout(updateTextTime,1000);
+        //var timeString = moment().format('MMMM Do YYYY, h:mm:ss a');
+        //document.querySelector("#helltext").setAttribute('text',"width: 10px;color: green; value:Hello,Time is " + timeString);
+        //setTimeout(updateTextTime,1000);
     };
     var sceneEl = document.querySelector('a-scene');
     //console.log(sceneEl.querySelector('#helltext'));
