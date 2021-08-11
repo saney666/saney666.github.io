@@ -1,0 +1,79 @@
+
+<script src="/script/aframe.min.js"></script>
+<script src="/script/aframe-ar.js"></script>
+<script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
+<script src="script/moment.js" ></script>
+<script >
+
+    window.onload = function () {
+      document.querySelector(".say-hi-button").addEventListener("click", function () {
+          // here you can change also a-scene or a-entity properties, like
+          // changing your 3D model source, size, position and so on
+          // or you can just open links, trigger actions...
+          //var timeString = moment().format('hh:mm:ss a');
+          //var aaa="width: 5px;color: green; value:Hello,Time is " + timeString;
+          //document.querySelector("#helltext").setAttribute('text',aaa);
+          alert("Hi there!");
+        });
+        //updateTextTime();
+    };
+    function updateTextTime(){
+        var timeString = moment().format('hh:mm:ss a');
+        var aaa="font: exo2semibold;align: left;width: 5;color: green; value:Hello,ArchCyber.\nTime is " + timeString;
+        document.querySelector("#helltext").setAttribute('text',aaa);
+        setTimeout(updateTextTime,1000);
+    };
+    var sceneEl = document.querySelector('a-scene');
+    //console.log(sceneEl.querySelector('#helltext'));
+    //var helltext=sceneEl.querySelector('#helltext');
+    //document.write('Hello world!');
+    //helltext.setAttribute('text',"width: 10px;color: green; value:Hello123");
+
+    // AFRAME.registerComponent('markerhandler', {
+    //     init: function () {
+    //         this.el.sceneEl.addEventListener('markerFound', () => {
+    //             // redirect to custom URL e.g. google.com
+    //             //window.location = 'https://www.google.com/';
+    //         })
+    //     }
+    // });
+
+</script>
+<style>
+    .buttons {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      display: none;
+    }
+
+    .say-hi-button {
+      padding: 0.25em;
+      border-radius: 4px;
+      border: none;
+      background: white;
+      color: black;
+      width: 4em;
+      height: 2em;
+    }
+  </style>
+<body style='margin : 0px; overflow: hidden;'>
+    <div class="buttons">
+        <button class="say-hi-button">SAY HI!</button>
+      </div>
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+        <a-marker markerhandler type='pattern' url='patts/pattern-qr-code.patt' >
+            <a-entity id='helltext' position='1.5 1 -1' rotation="270 0 0" scale="1 1 1" text="font:roboto;align: center;width: 5;color: green; value:Jessica,Happy Birthday!!" ></a-entity>
+             
+            <a-entity position='0 1 -2' rotation="270 0 0" gltf-model="url(shiba/scene.glb)"></a-entity>
+            <a-entity log="message: Hello, Metaverse!"></a-entity>
+            
+        </a-marker>
+    </a-scene>
+</body>
