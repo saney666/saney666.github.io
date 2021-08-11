@@ -1,0 +1,11 @@
+Model Information:
+* title:	Happy Birthday!
+* source:	https://sketchfab.com/3d-models/happy-birthday-a581dab363ae4457adc362596b0330af
+* author:	ZachWilkins1997 (https://sketchfab.com/ZachWilkins1997)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Happy Birthday!" (https://sketchfab.com/3d-models/happy-birthday-a581dab363ae4457adc362596b0330af) by ZachWilkins1997 (https://sketchfab.com/ZachWilkins1997) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
